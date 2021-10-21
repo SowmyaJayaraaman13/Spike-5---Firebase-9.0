@@ -113,6 +113,127 @@
   margin-left: 0.5rem;
 }
 
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+  justify-content: space-between;
+  align-items:center;
+  width: 400px;
+  height: 300px;
+  padding: 40px;
+  border-radius: 24px 3px;
+  -webkit-box-shadow: 13px 10px 17px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 10px 17px 0px rgba(0,0,0,0.75);
+box-shadow: 13px 10px 17px 0px rgba(0,0,0,0.75);
+
+}
+
+.formContainer > button{
+  border: none;
+  outline: none;
+  border: 1px solid rgb(2, 143, 143);
+  border-radius: 10px;
+  background-color: aqua;
+  color: black;
+  padding: 10px;
+}
+
+.formFieldWrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.formFieldWrapper input{
+border: none;
+outline: none;
+border-bottom: 1px solid black;
+background: transparent;
+width: 65%;
+
+}
+
+.formFieldWrapper input:focus{
+  border-bottom: 1px solid rgb(2, 143, 143);
+}
+
+.cardWrapper{
+  background: white;
+  width: 23.5%;
+  margin-left: 1.2%;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px;
+
+}
+
+.deleteIcon, .editIcon{
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  right: 10px;
+  z-index: 10;
+  color: rgb(4, 92, 92);
+  cursor: pointer;
+}
+
+.deleteIcon{
+  right: 10px;
+  /* display: none; */
+
+}
+
+.editIcon{
+  right: 40px;
+  /* display: none; */
+
+
+}
+
+.cardContent{
+  padding: 5%;
+}
+
+.cardtitle, .author, .price{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+}
+
+.cardtitle{
+  font-size: 22px;
+}
+.author{
+  font-size: 14px;
+  color: rgb(3, 143, 143);
+}
+
+.price{
+  margin-top: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.level{
+  font-size: 10px;
+  background: #0070f3;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+.cardImage{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardImage:hover {
+  opacity: .2;
+  /* display: block; */
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
